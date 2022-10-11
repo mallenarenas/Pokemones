@@ -13,7 +13,7 @@ const SearchPokemon = () => {
     }, [])
 
     const consultApi = async () => {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=151')
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=250')
         const  pokedata = await response.json();
         if(response && pokedata){
         setPokeNames(pokedata.results) 
